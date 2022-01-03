@@ -5,47 +5,47 @@ const router = require('express').Router();
 const controller = require('../controllers/todo');
 
 //CREATE
-router.post("/language", (req, res) => {
+router.post("/todo", (req, res) => {
 
     controller.create(req, res);
 
 });
 
 //READ
-router.get("/languages", (req, res) => {
+router.get("/todos", (req, res) => {
     
     controller.reads(req, res);
 
 });
 
-router.get("/language/:id", (req, res) => {
+router.get("/todo/:id", (req, res) => {
     
     controller.read(req, res);
 
 });
 
 //UPDATE
-router.put("/language/:id", (req, res) => {
+router.put("/todo/:id", (req, res) => {
     
     controller.update(req, res);
 
 });
 
 //DELETE
-router.delete("/language/:id", (req, res) => {
+router.delete("/todo/:id", (req, res) => {
     
     controller.delete(req, res);
 
 });
 
 //COMPLETED
-router.post("/language/:id/done", (req, res) => {
+router.post("/todo/:id/done", (req, res) => {
 
     controller.done(req, res);
 
 });
 
-router.post("/language/:id/undone", (req, res) => {
+router.post("/todo/:id/undone", (req, res) => {
 
     controller.undone(req, res);
 
