@@ -1,1 +1,1 @@
-# INFO734-React
+Chapter 21: Add endpoint on /api/v1
