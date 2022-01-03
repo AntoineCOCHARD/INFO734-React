@@ -13,7 +13,7 @@
     "MongoDB",
     "Todo"
   ],
-  "author": "Marc-Philippe Huget",
+  "author": "Antoine Cochard",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
